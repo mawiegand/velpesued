@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180226214519) do
+ActiveRecord::Schema.define(version: 20180226230253) do
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title"
@@ -148,6 +148,16 @@ ActiveRecord::Schema.define(version: 20180226214519) do
     t.string "file_ext"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "refinery_sponsors", force: :cascade do |t|
+    t.string "name"
+    t.integer "logo_id"
+    t.string "link_url"
+    t.boolean "published"
+    t.integer "position"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "seo_meta", force: :cascade do |t|
