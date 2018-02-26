@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      sponsors:
+        title: Sponsors
+    sponsors:
+      admin:
+        sponsors:
+          actions:
+            create_new: Yeni Ekle Sponsor
+            reorder: Tekrar sirala Sponsors
+            reorder_done: Tekrar siralama tamamlandiSponsors
+          records:
+            title: Sponsors
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Sponsors yok henuz.  Tikla "Yeni Ekle Sponsor" eklemek senin ilk sponsor.
+          sponsor:
+            view_live_html: Bunu canlu sponsor goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle sponsor
+            delete: Bunu Sil sponsor sonsuza dek
+      sponsors:
+        show:
+          other: Diger Sponsors
+  activerecord:
+    attributes:
+      'refinery/sponsors/sponsor':
+        name: Name
+        logo: Logo
+        link_url: Link Url
+        published: Published

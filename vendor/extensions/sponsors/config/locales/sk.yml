@@ -1,0 +1,30 @@
+sk:
+  refinery:
+    plugins:
+      sponsors:
+        title: Sponsors
+    sponsors:
+      admin:
+        sponsors:
+          actions:
+            create_new: Pridať Sponsor
+            reorder: Preusporiadať Sponsors
+            reorder_done: Koniec radenia Sponsors
+          records:
+            title: Sponsors
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Sponsors. Kliknite na "Pridať Sponsor" pre pridanie prvého sponsor.
+          sponsor:
+            view_live_html: Zobraziť náhľad sponsor<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť sponsor
+            delete: Zmazať sponsor
+      sponsors:
+        show:
+          other: Daľšie Sponsors
+  activerecord:
+    attributes:
+      'refinery/sponsors/sponsor':
+        name: Name
+        logo: Logo
+        link_url: Link Url
+        published: Published

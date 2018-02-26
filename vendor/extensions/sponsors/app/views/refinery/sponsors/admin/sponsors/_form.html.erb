@@ -1,0 +1,34 @@
+<%= form_for [refinery, :sponsors_admin, @sponsor] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @sponsor,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :logo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :logo_id,
+               :image => @sponsor.logo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_url -%>
+    <%= f.text_field :link_url -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :published -%>
+    <%= f.check_box :published, :checked => @sponsor[:published] -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.sponsors.admin.sponsors.sponsor'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @sponsor.name) -%>
+<% end -%>

@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      sponsors:
+        title: Sponsors
+    sponsors:
+      admin:
+        sponsors:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Sponsor
+            reorder: Réordonner les Sponsors
+            reorder_done: Fin de réordonnancement des Sponsors
+          records:
+            title: Sponsors
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Sponsor. Cliquer sur "Créer un(e) nouve(au/l/lle) Sponsor" pour créer votre premi(er/ère) sponsor.'
+          sponsor:
+            view_live_html: Voir ce(t/tte) sponsor <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) sponsor
+            delete: Supprimer définitivement ce(t/tte) sponsor
+      sponsors:
+        show:
+          other: Autres Sponsors
+  activerecord:
+    attributes:
+      'refinery/sponsors/sponsor':
+        name: Name
+        logo: Logo
+        link_url: Link Url
+        published: Published
