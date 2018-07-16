@@ -1,0 +1,30 @@
+ru:
+  refinery:
+    plugins:
+      sponsors:
+        title: Sponsors
+    sponsors:
+      admin:
+        sponsors:
+          actions:
+            create_new: Добавить Sponsor
+            reorder: Изменить порядок Sponsors
+            reorder_done: Закончить изменять порядок Sponsors
+          records:
+            title: Sponsors
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Sponsors" не найдено. Нажмите "Добавить Sponsor" чтобы создать sponsor.
+          sponsor:
+            view_live_html: Просмотреть sponsor вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать sponsor
+            delete: Удалить sponsor навсегда
+      sponsors:
+        show:
+          other: Другие Sponsors
+  activerecord:
+    attributes:
+      'refinery/sponsors/sponsor':
+        name: Name
+        logo: Logo
+        link_url: Link Url
+        published: Published

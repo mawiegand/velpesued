@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      sponsors:
+        title: Sponsors
+    sponsors:
+      admin:
+        sponsors:
+          actions:
+            create_new: 建立新的 Sponsor
+            reorder: 对 Sponsors 重新排序
+            reorder_done: 对 Sponsors 的重新排序结束
+          records:
+            title: Sponsors
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Sponsors yet. Click "Add New Sponsor" to add your first sponsor.
+            no_items_yet: 目前没有 Sponsors . 点击 "Add New Sponsor" 创建一个sponsor.
+          sponsor:
+            view_live_html: 查看 sponsor 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 sponsor
+            delete: 永久删除 sponsor
+      sponsors:
+        show:
+          other: 其他 Sponsors
+  activerecord:
+    attributes:
+      'refinery/sponsors/sponsor':
+        name: Name
+        logo: Logo
+        link_url: Link Url
+        published: Published

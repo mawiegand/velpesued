@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      sponsors:
+        title: Sponsors
+    sponsors:
+      admin:
+        sponsors:
+          actions:
+            create_new: Lag en ny Sponsor
+            reorder: Endre rekkefølgen på Sponsors
+            reorder_done: Ferdig å endre rekkefølgen Sponsors
+          records:
+            title: Sponsors
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Sponsors enda. Klikk på "Lag en ny Sponsor" for å legge til din første sponsor.
+          sponsor:
+            view_live_html: Vis hvordan denne sponsor ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne sponsor
+            delete: Fjern denne sponsor permanent
+      sponsors:
+        show:
+          other: Andre Sponsors
+  activerecord:
+    attributes:
+      'refinery/sponsors/sponsor':
+        name: Name
+        logo: Logo
+        link_url: Link Url
+        published: Published

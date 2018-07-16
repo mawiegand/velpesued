@@ -1,3 +1,10 @@
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-sponsors (1.0)
+      acts_as_indexed (~> 0.8.0)
+      refinerycms-core (~> 4.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -331,6 +338,7 @@ DEPENDENCIES
   refinerycms (~> 4.0)
   refinerycms-acts-as-indexed (~> 3.0, >= 3.0.0)
   refinerycms-authentication-devise (~> 2.0)
+  refinerycms-sponsors!
   refinerycms-wymeditor (~> 2.0, >= 2.0.0)
   sass-rails (~> 5.0)
   selenium-webdriver

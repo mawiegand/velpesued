@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      sponsors:
+        title: Sponsors
+    sponsors:
+      admin:
+        sponsors:
+          actions:
+            create_new: Nieuwe Sponsor toevoegen
+            reorder: De volgorde van de Sponsors wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Sponsor-volgorde
+          records:
+            title: Sponsors
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Sponsors. Druk op 'Nieuwe Sponsor toevoegen' om de eerste toe te voegen.
+          sponsor:
+            view_live_html: Deze sponsor op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze sponsor
+            delete: Deze sponsor definitief verwijderen
+      sponsors:
+        show:
+          other: Andere Sponsors
+  activerecord:
+    attributes:
+      'refinery/sponsors/sponsor':
+        name: Name
+        logo: Logo
+        link_url: Link Url
+        published: Published

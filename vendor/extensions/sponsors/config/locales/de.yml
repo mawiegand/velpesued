@@ -1,0 +1,30 @@
+de:
+  refinery:
+    plugins:
+      sponsors:
+        title: Sponsoren
+    sponsors:
+      admin:
+        sponsors:
+          actions:
+            create_new: Neuen Sponsor anlegen
+            reorder: Sponsoren umsortieren
+            reorder_done: Umsortieren erledigt
+          records:
+            title: Sponsoren
+            sorry_no_results: Tut mir leid, Suche brachte keine Ergebnisse!
+            no_items_yet: Es sind noch keine Sponsoren vorhanden. Klicken Sie auf "Neuen Sponsor anlegen", um Ihren ersten Sponsor hinzuzufügen.
+          sponsor:
+            view_live_html: Diesen Sponsor live betrachten <br/><em>(öffnet sich in einem neuen Fenster)</em>
+            edit: Diesen Sponsor bearbeiten
+            delete: Diesen Sponsor dauerhaft entfernen
+      sponsors:
+        show:
+          other: Andere Sponsoren
+  activerecord:
+    attributes:
+      'refinery/sponsors/sponsor':
+        name: Name
+        logo: Logo
+        link_url: Link Url
+        published: Veröffentlicht
