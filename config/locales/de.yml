@@ -1,0 +1,8 @@
+de:
+  refinery:
+    admin:
+      pages:
+        form_extra_fields_for_more_options:
+          show_in_footer_menu_title: Im Footer Menü anzeigen
+          show_in_footer_menu_description: Zeigt diese Seite im Seitenmenü des Footers an
+          show_in_footer_menu_help: Setzen Sie dieses Häckchen, wenn die Seite im Footer Menü erscheinen soll.

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180713110934) do
+ActiveRecord::Schema.define(version: 20180717204932) do
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title"
@@ -124,6 +124,7 @@ ActiveRecord::Schema.define(version: 20180713110934) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer "children_count", default: 0, null: false
+    t.boolean "show_in_footer", default: false
     t.index ["depth"], name: "index_refinery_pages_on_depth"
     t.index ["id"], name: "index_refinery_pages_on_id"
     t.index ["lft"], name: "index_refinery_pages_on_lft"

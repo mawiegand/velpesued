@@ -30,4 +30,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  refinery:
+    admin:
+      pages:
+        form_extra_fields_for_more_options:
+          show_in_footer_menu_title: Show in footer menu
+          show_in_footer_menu_description: Display this page in the footer menu
+          show_in_footer_menu_help: Check this box if you want to add a page to your footer menu.

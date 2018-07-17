@@ -1,0 +1,9 @@
+<%# Intentionally empty, useful override point to add extra fields. %>
+<div class='field'>
+  <span class='label_with_help'>
+    <%= f.label :show_in_footer, t('.show_in_footer_menu_title'),
+                :id => 'page_show_in_footer_menu_heading' %>
+    <%= refinery_help_tag t('.show_in_footer_menu_help') %>
+  </span>
+  <%= f.check_box :show_in_footer %> <%= t('.show_in_footer_menu_description') %>
+</div>
