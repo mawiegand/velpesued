@@ -1,5 +1,8 @@
-<%= footer_menu.to_html %>
-<p>
-  <%= t('.copyright', :year => Time.now.year,
-                      :site_name => Refinery::Core.site_name) %>
-</p>
+<div class="container">
+  <span class="text-muted">
+    <%= t('.copyright', :year => Time.now.year,
+          :site_name => Refinery::Core.site_name) %>
+  </span>
+  
+  <%= footer_menu.to_html %>
+</div>
