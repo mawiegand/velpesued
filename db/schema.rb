@@ -12,7 +12,10 @@
 
 ActiveRecord::Schema.define(version: 20180717204932) do
 
-  create_table "refinery_authentication_devise_roles", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "refinery_authentication_devise_roles", id: :serial, force: :cascade do |t|
     t.string "title"
   end
 
@@ -23,7 +26,7 @@ ActiveRecord::Schema.define(version: 20180717204932) do
     t.index ["user_id", "role_id"], name: "refinery_roles_users_user_id_role_id"
   end
 
-  create_table "refinery_authentication_devise_user_plugins", force: :cascade do |t|
+  create_table "refinery_authentication_devise_user_plugins", id: :serial, force: :cascade do |t|
     t.integer "user_id"
     t.string "name"
     t.integer "position"
@@ -31,7 +34,7 @@ ActiveRecord::Schema.define(version: 20180717204932) do
     t.index ["user_id", "name"], name: "refinery_user_plugins_user_id_name", unique: true
   end
 
-  create_table "refinery_authentication_devise_users", force: :cascade do |t|
+  create_table "refinery_authentication_devise_users", id: :serial, force: :cascade do |t|
     t.string "username", null: false
     t.string "email", null: false
     t.string "encrypted_password", null: false
@@ -62,7 +65,7 @@ ActiveRecord::Schema.define(version: 20180717204932) do
     t.index ["refinery_image_id"], name: "index_refinery_image_translations_on_refinery_image_id"
   end
 
-  create_table "refinery_images", force: :cascade do |t|
+  create_table "refinery_images", id: :serial, force: :cascade do |t|
     t.string "image_mime_type"
     t.string "image_name"
     t.integer "image_size"
@@ -83,7 +86,7 @@ ActiveRecord::Schema.define(version: 20180717204932) do
     t.index ["refinery_page_part_id"], name: "index_refinery_page_part_translations_on_refinery_page_part_id"
   end
 
-  create_table "refinery_page_parts", force: :cascade do |t|
+  create_table "refinery_page_parts", id: :serial, force: :cascade do |t|
     t.integer "refinery_page_id"
     t.string "slug"
     t.integer "position"
@@ -107,7 +110,7 @@ ActiveRecord::Schema.define(version: 20180717204932) do
     t.index ["refinery_page_id"], name: "index_refinery_page_translations_on_refinery_page_id"
   end
 
-  create_table "refinery_pages", force: :cascade do |t|
+  create_table "refinery_pages", id: :serial, force: :cascade do |t|
     t.integer "parent_id"
     t.string "path"
     t.boolean "show_in_menu", default: true
@@ -142,7 +145,7 @@ ActiveRecord::Schema.define(version: 20180717204932) do
     t.index ["refinery_resource_id"], name: "index_refinery_resource_translations_on_refinery_resource_id"
   end
 
-  create_table "refinery_resources", force: :cascade do |t|
+  create_table "refinery_resources", id: :serial, force: :cascade do |t|
     t.string "file_mime_type"
     t.string "file_name"
     t.integer "file_size"
@@ -162,7 +165,7 @@ ActiveRecord::Schema.define(version: 20180717204932) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "seo_meta", force: :cascade do |t|
+  create_table "seo_meta", id: :serial, force: :cascade do |t|
     t.integer "seo_meta_id"
     t.string "seo_meta_type"
     t.string "browser_title"
