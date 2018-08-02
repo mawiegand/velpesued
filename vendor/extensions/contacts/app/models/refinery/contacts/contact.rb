@@ -5,6 +5,7 @@ module Refinery
 
 
       validates :name, :presence => true, :uniqueness => true
+      validates :mail, :email => true, :uniqueness => true
 
       belongs_to :photo, :class_name => '::Refinery::Image'
 
