@@ -7,7 +7,8 @@ Gem::Specification.new do |s|
   s.description       = 'Ruby on Rails Contacts extension for Refinery CMS'
   s.date              = '2018-08-02'
   s.summary           = 'Contacts extension for Refinery CMS'
-  s.authors           = 
+  s.author            = 'Marcel Wiegand'
+  s.email             = 'marcel@bluepanel.org'
   s.require_paths     = %w(lib)
   s.files             = Dir["{app,config,db,lib}/**/*"] + ["readme.md"]
 
