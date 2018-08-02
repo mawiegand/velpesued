@@ -1,0 +1,31 @@
+de:
+  refinery:
+    plugins:
+      contacts:
+        title: Kontakte
+    contacts:
+      admin:
+        contacts:
+          actions:
+            create_new: Neuen Kontakt anlegen
+            reorder: Kontakte umsortieren
+            reorder_done: Umsortieren erledigt
+          records:
+            title: Kontakte
+            sorry_no_results: Tut mir leid, Suche brachte keine Ergebnisse!
+            no_items_yet: Es sind noch keine Kontakte vorhanden. Klicken Sie auf "Neuen Kontakt anlegen", um Ihren ersten Kontakt hinzuzufügen.
+          contact:
+            view_live_html: Diesen Kontakt live betrachten <br/><em>(öffnet sich in einem neuen Fenster)</em>
+            edit: Diesen Kontakt bearbeiten
+            delete: Diesen Kontakt dauerhaft entfernen
+      contacts:
+        show:
+          other: Andere Kontakte
+  activerecord:
+    attributes:
+      'refinery/contacts/contact':
+        name: Name
+        photo: Foto
+        mail: E-Mail
+        phone: Festnetz
+        mobile: Mobil
