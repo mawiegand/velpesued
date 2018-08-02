@@ -6,6 +6,7 @@ module Refinery
 
       validates :name, :presence => true, :uniqueness => true
       validates :mail, :email => true, :uniqueness => true
+      validates :phone, :mobile, :phone => true
 
       belongs_to :photo, :class_name => '::Refinery::Image', :optional => true
 

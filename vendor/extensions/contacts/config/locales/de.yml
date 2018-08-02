@@ -15,6 +15,7 @@ de:
             sorry_no_results: Tut mir leid, Suche brachte keine Ergebnisse!
             no_items_yet: Es sind noch keine Kontakte vorhanden. Klicken Sie auf "Neuen Kontakt anlegen", um Ihren ersten Kontakt hinzuzufügen.
             no_valid_email: ist nicht gültig
+            no_valid_phone: ist nicht gültig
           contact:
             view_live_html: Diesen Kontakt live betrachten <br/><em>(öffnet sich in einem neuen Fenster)</em>
             edit: Diesen Kontakt bearbeiten
