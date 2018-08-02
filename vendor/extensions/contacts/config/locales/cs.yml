@@ -1,0 +1,31 @@
+cs:
+  refinery:
+    plugins:
+      contacts:
+        title: Contacts
+    contacts:
+      admin:
+        contacts:
+          actions:
+            create_new: Přidat Contact
+            reorder: Řadit Contacts
+            reorder_done: Konec řazení Contacts
+          records:
+            title: Contacts
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Contacts. Zvolte "Přidat Contact" pro přidání prvního contact.
+          contact:
+            view_live_html: Zobrazit náhled contact<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit contact
+            delete: Smazat contact
+      contacts:
+        show:
+          other: Další Contacts
+  activerecord:
+    attributes:
+      'refinery/contacts/contact':
+        name: Name
+        photo: Photo
+        mail: Mail
+        phone: Phone
+        mobile: Mobile

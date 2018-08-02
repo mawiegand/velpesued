@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      contacts:
+        title: Contacts
+    contacts:
+      admin:
+        contacts:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Contact
+            reorder: Réordonner les Contacts
+            reorder_done: Fin de réordonnancement des Contacts
+          records:
+            title: Contacts
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Contact. Cliquer sur "Créer un(e) nouve(au/l/lle) Contact" pour créer votre premi(er/ère) contact.'
+          contact:
+            view_live_html: Voir ce(t/tte) contact <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) contact
+            delete: Supprimer définitivement ce(t/tte) contact
+      contacts:
+        show:
+          other: Autres Contacts
+  activerecord:
+    attributes:
+      'refinery/contacts/contact':
+        name: Name
+        photo: Photo
+        mail: Mail
+        phone: Phone
+        mobile: Mobile

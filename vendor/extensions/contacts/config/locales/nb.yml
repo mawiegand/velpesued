@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      contacts:
+        title: Contacts
+    contacts:
+      admin:
+        contacts:
+          actions:
+            create_new: Lag en ny Contact
+            reorder: Endre rekkefølgen på Contacts
+            reorder_done: Ferdig å endre rekkefølgen Contacts
+          records:
+            title: Contacts
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Contacts enda. Klikk på "Lag en ny Contact" for å legge til din første contact.
+          contact:
+            view_live_html: Vis hvordan denne contact ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne contact
+            delete: Fjern denne contact permanent
+      contacts:
+        show:
+          other: Andre Contacts
+  activerecord:
+    attributes:
+      'refinery/contacts/contact':
+        name: Name
+        photo: Photo
+        mail: Mail
+        phone: Phone
+        mobile: Mobile

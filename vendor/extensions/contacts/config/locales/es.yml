@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      contacts:
+        title: Contacts
+#        article: masculino/femenino
+    contacts:
+      admin:
+        contacts:
+          actions:
+            create_new: Crear nuevo contact
+            reorder: Reordenar contacts
+            reorder_done: Reordenación de contacts completada
+          records:
+            title: Contacts
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay contacts todavía. Pulsa en "Crear nuevo Contact" para crear tu primer contact.
+          contact:
+            view_live_html: Ver este contact como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este contact
+            delete: Borrar este contact para siempre
+      contacts:
+        show:
+          other: Otros contacts
+  activerecord:
+    attributes:
+      'refinery/contacts/contact':
+        name: Name
+        photo: Photo
+        mail: Mail
+        phone: Phone
+        mobile: Mobile
