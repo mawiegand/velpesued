@@ -1,11 +1,13 @@
-<% content_for :body do %>
-  <ul id="contacts">
-    <% @contacts.each do |contact| %>
-      <li>
-        <%= link_to contact.name, refinery.contacts_contact_path(contact) %>
-      </li>
-    <% end %>
-  </ul>
-<% end %>
+<section class="container">
+  <% content_for :body do %>
+    <ul id="contacts">
+      <% @contacts.each do |contact| %>
+        <li>
+          <%= link_to contact.name, refinery.contacts_contact_path(contact) %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
 
-<%= render '/refinery/content_page' %>
+  <%= render '/refinery/content_page' %>
+</section>
