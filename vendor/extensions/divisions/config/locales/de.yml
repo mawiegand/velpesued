@@ -1,0 +1,28 @@
+de:
+  refinery:
+    plugins:
+      divisions:
+        title: Abteilungen
+    divisions:
+      admin:
+        divisions:
+          actions:
+            create_new: Neue Abteilung anlegen
+            reorder: Abteilungen umsortieren
+            reorder_done: Umsortieren erledigt
+          records:
+            title: Abteilungen
+            sorry_no_results: Tut mir leid, Suche brachte keine Ergebnisse!
+            no_items_yet: Es sind noch keine Abteilungen vorhanden. Klicken Sie auf "Neue Abteilung anlegen", um Ihre erste Abteilung hinzuzufügen.
+          division:
+            view_live_html: Diese Abteilung live betrachten <br/><em>(öffnet sich in einem neuen Fenster)</em>
+            edit: Diese Abteilung bearbeiten
+            delete: Diese Abteilung dauerhaft entfernen
+      divisions:
+        show:
+          other: Andere Abteilungen
+  activerecord:
+    attributes:
+      'refinery/divisions/division':
+        name: Name
+        description: Beschreibung
