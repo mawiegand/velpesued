@@ -1,0 +1,28 @@
+tr:
+  refinery:
+    plugins:
+      divisions:
+        title: Divisions
+    divisions:
+      admin:
+        divisions:
+          actions:
+            create_new: Yeni Ekle Division
+            reorder: Tekrar sirala Divisions
+            reorder_done: Tekrar siralama tamamlandiDivisions
+          records:
+            title: Divisions
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Divisions yok henuz.  Tikla "Yeni Ekle Division" eklemek senin ilk division.
+          division:
+            view_live_html: Bunu canlu division goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle division
+            delete: Bunu Sil division sonsuza dek
+      divisions:
+        show:
+          other: Diger Divisions
+  activerecord:
+    attributes:
+      'refinery/divisions/division':
+        name: Name
+        description: Description

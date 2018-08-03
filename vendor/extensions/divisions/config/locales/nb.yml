@@ -1,0 +1,28 @@
+nb:
+  refinery:
+    plugins:
+      divisions:
+        title: Divisions
+    divisions:
+      admin:
+        divisions:
+          actions:
+            create_new: Lag en ny Division
+            reorder: Endre rekkefølgen på Divisions
+            reorder_done: Ferdig å endre rekkefølgen Divisions
+          records:
+            title: Divisions
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Divisions enda. Klikk på "Lag en ny Division" for å legge til din første division.
+          division:
+            view_live_html: Vis hvordan denne division ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne division
+            delete: Fjern denne division permanent
+      divisions:
+        show:
+          other: Andre Divisions
+  activerecord:
+    attributes:
+      'refinery/divisions/division':
+        name: Name
+        description: Description

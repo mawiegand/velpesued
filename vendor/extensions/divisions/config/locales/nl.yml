@@ -1,0 +1,28 @@
+nl:
+  refinery:
+    plugins:
+      divisions:
+        title: Divisions
+    divisions:
+      admin:
+        divisions:
+          actions:
+            create_new: Nieuwe Division toevoegen
+            reorder: De volgorde van de Divisions wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Division-volgorde
+          records:
+            title: Divisions
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Divisions. Druk op 'Nieuwe Division toevoegen' om de eerste toe te voegen.
+          division:
+            view_live_html: Deze division op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze division
+            delete: Deze division definitief verwijderen
+      divisions:
+        show:
+          other: Andere Divisions
+  activerecord:
+    attributes:
+      'refinery/divisions/division':
+        name: Name
+        description: Description

@@ -1,0 +1,28 @@
+cs:
+  refinery:
+    plugins:
+      divisions:
+        title: Divisions
+    divisions:
+      admin:
+        divisions:
+          actions:
+            create_new: Přidat Division
+            reorder: Řadit Divisions
+            reorder_done: Konec řazení Divisions
+          records:
+            title: Divisions
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Divisions. Zvolte "Přidat Division" pro přidání prvního division.
+          division:
+            view_live_html: Zobrazit náhled division<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit division
+            delete: Smazat division
+      divisions:
+        show:
+          other: Další Divisions
+  activerecord:
+    attributes:
+      'refinery/divisions/division':
+        name: Name
+        description: Description

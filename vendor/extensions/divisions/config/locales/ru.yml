@@ -1,0 +1,28 @@
+ru:
+  refinery:
+    plugins:
+      divisions:
+        title: Divisions
+    divisions:
+      admin:
+        divisions:
+          actions:
+            create_new: Добавить Division
+            reorder: Изменить порядок Divisions
+            reorder_done: Закончить изменять порядок Divisions
+          records:
+            title: Divisions
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Divisions" не найдено. Нажмите "Добавить Division" чтобы создать division.
+          division:
+            view_live_html: Просмотреть division вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать division
+            delete: Удалить division навсегда
+      divisions:
+        show:
+          other: Другие Divisions
+  activerecord:
+    attributes:
+      'refinery/divisions/division':
+        name: Name
+        description: Description

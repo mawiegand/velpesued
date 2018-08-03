@@ -1,0 +1,28 @@
+it:
+  refinery:
+    plugins:
+      divisions:
+        title: Divisions
+    divisions:
+      admin:
+        divisions:
+          actions:
+            create_new: Aggiungi Nuovo Division
+            reorder: Riordina Divisions
+            reorder_done: Termina il Riordino di Divisions
+          records:
+            title: Divisions
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Divisions. Clicca "Aggiungi Nuovo Division" per aggiungere il tuo primo division.
+          division:
+            view_live_html: Guarda live questo division <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo division
+            delete: Rimuovi per sempre questo division
+      divisions:
+        show:
+          other: Altri Divisions
+  activerecord:
+    attributes:
+      'refinery/divisions/division':
+        name: Name
+        description: Description

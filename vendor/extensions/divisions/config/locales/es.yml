@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      divisions:
+        title: Divisions
+#        article: masculino/femenino
+    divisions:
+      admin:
+        divisions:
+          actions:
+            create_new: Crear nuevo division
+            reorder: Reordenar divisions
+            reorder_done: Reordenación de divisions completada
+          records:
+            title: Divisions
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay divisions todavía. Pulsa en "Crear nuevo Division" para crear tu primer division.
+          division:
+            view_live_html: Ver este division como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este division
+            delete: Borrar este division para siempre
+      divisions:
+        show:
+          other: Otros divisions
+  activerecord:
+    attributes:
+      'refinery/divisions/division':
+        name: Name
+        description: Description

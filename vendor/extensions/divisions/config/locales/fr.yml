@@ -1,0 +1,28 @@
+fr:
+  refinery:
+    plugins:
+      divisions:
+        title: Divisions
+    divisions:
+      admin:
+        divisions:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Division
+            reorder: Réordonner les Divisions
+            reorder_done: Fin de réordonnancement des Divisions
+          records:
+            title: Divisions
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Division. Cliquer sur "Créer un(e) nouve(au/l/lle) Division" pour créer votre premi(er/ère) division.'
+          division:
+            view_live_html: Voir ce(t/tte) division <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) division
+            delete: Supprimer définitivement ce(t/tte) division
+      divisions:
+        show:
+          other: Autres Divisions
+  activerecord:
+    attributes:
+      'refinery/divisions/division':
+        name: Name
+        description: Description

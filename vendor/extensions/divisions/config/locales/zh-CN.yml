@@ -1,0 +1,30 @@
+zh-CN:
+  refinery:
+    plugins:
+      divisions:
+        title: Divisions
+    divisions:
+      admin:
+        divisions:
+          actions:
+            create_new: 建立新的 Division
+            reorder: 对 Divisions 重新排序
+            reorder_done: 对 Divisions 的重新排序结束
+          records:
+            title: Divisions
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Divisions yet. Click "Add New Division" to add your first division.
+            no_items_yet: 目前没有 Divisions . 点击 "Add New Division" 创建一个division.
+          division:
+            view_live_html: 查看 division 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 division
+            delete: 永久删除 division
+      divisions:
+        show:
+          other: 其他 Divisions
+  activerecord:
+    attributes:
+      'refinery/divisions/division':
+        name: Name
+        description: Description
