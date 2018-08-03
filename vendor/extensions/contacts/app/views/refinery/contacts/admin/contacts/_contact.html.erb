@@ -6,7 +6,7 @@
   <span class='preview'></span>
 
   <span class='actions'>
-    <%= action_icon(:preview, refinery.contacts_contact_path(contact), t('.view_live_html')) %>
+    <%= action_icon(:preview, refinery.contacts_contacts_path(), t('.view_live_html')) %>
     <%= action_icon(:edit,    refinery.edit_contacts_admin_contact_path(contact), t('.edit') ) %>
     <%= action_icon(:delete,  refinery.contacts_admin_contact_path(contact), t('.delete'),
       { class: "cancel confirm-delete",
