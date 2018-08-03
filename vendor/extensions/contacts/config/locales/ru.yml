@@ -1,0 +1,31 @@
+ru:
+  refinery:
+    plugins:
+      contacts:
+        title: Contacts
+    contacts:
+      admin:
+        contacts:
+          actions:
+            create_new: Добавить Contact
+            reorder: Изменить порядок Contacts
+            reorder_done: Закончить изменять порядок Contacts
+          records:
+            title: Contacts
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Contacts" не найдено. Нажмите "Добавить Contact" чтобы создать contact.
+          contact:
+            view_live_html: Просмотреть contact вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать contact
+            delete: Удалить contact навсегда
+      contacts:
+        show:
+          other: Другие Contacts
+  activerecord:
+    attributes:
+      'refinery/contacts/contact':
+        name: Name
+        photo: Photo
+        mail: Mail
+        phone: Phone
+        mobile: Mobile

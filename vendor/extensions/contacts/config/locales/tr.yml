@@ -1,0 +1,31 @@
+tr:
+  refinery:
+    plugins:
+      contacts:
+        title: Contacts
+    contacts:
+      admin:
+        contacts:
+          actions:
+            create_new: Yeni Ekle Contact
+            reorder: Tekrar sirala Contacts
+            reorder_done: Tekrar siralama tamamlandiContacts
+          records:
+            title: Contacts
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Contacts yok henuz.  Tikla "Yeni Ekle Contact" eklemek senin ilk contact.
+          contact:
+            view_live_html: Bunu canlu contact goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle contact
+            delete: Bunu Sil contact sonsuza dek
+      contacts:
+        show:
+          other: Diger Contacts
+  activerecord:
+    attributes:
+      'refinery/contacts/contact':
+        name: Name
+        photo: Photo
+        mail: Mail
+        phone: Phone
+        mobile: Mobile
