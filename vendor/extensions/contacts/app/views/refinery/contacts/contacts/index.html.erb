@@ -1,12 +1,18 @@
 <section class="container">
   <% content_for :body do %>
-    <ul id="contacts">
+    <section id="contacts">
       <% @contacts.each do |contact| %>
-        <li>
-          <%= link_to contact.name, refinery.contacts_contact_path(contact) %>
-        </li>
+        <article>
+          <%= image_fu contact.photo, '150x150', class: 'float-left' %>
+          <div class="clearfix">
+            <h3><%=raw contact.name %></h3>
+            <%=raw contact.mail %><br>
+            <%=raw contact.phone %><br>
+            <%=raw contact.mobile %><br>
+          </div>
+        </article>
       <% end %>
-    </ul>
+    </section>
   <% end %>
 
   <%= render '/refinery/content_page' %>
