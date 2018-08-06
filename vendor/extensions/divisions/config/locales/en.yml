@@ -1,10 +1,26 @@
 en:
   refinery:
     plugins:
+      groups:
+        title: Groups
       divisions:
         title: Divisions
     divisions:
       admin:
+        groups:
+          actions:
+            create_new: Add New Group
+            reorder: Reorder Groups
+            reorder_done: Done Reordering Groups
+          records:
+            title: Groups
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Groups yet. Click "Add New Group" to add your
+              first group.
+          group:
+            view_live_html: View this group live <br/><em>(opens in a new window)</em>
+            edit: Edit this group
+            delete: Remove this group forever
         divisions:
           actions:
             create_new: Add New Division
@@ -13,16 +29,24 @@ en:
           records:
             title: Divisions
             sorry_no_results: Sorry! There are no results found.
-            no_items_yet: There are no Divisions yet. Click "Add New Division" to add your first division.
+            no_items_yet: There are no Divisions yet. Click "Add New Division" to
+              add your first division.
           division:
             view_live_html: View this division live <br/><em>(opens in a new window)</em>
             edit: Edit this division
             delete: Remove this division forever
+      groups:
+        show:
+          other: Other Groups
       divisions:
         show:
           other: Other Divisions
   activerecord:
     attributes:
-      'refinery/divisions/division':
+      refinery/divisions/group:
+        name: Name
+        photo: Photo
+        description: Description
+      refinery/divisions/division:
         name: Name
         description: Description

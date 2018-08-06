@@ -1,10 +1,26 @@
 fr:
   refinery:
     plugins:
+      groups:
+        title: Groups
       divisions:
         title: Divisions
     divisions:
       admin:
+        groups:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Group
+            reorder: Réordonner les Groups
+            reorder_done: Fin de réordonnancement des Groups
+          records:
+            title: Groups
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Group. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Group" pour créer votre premi(er/ère) group.
+          group:
+            view_live_html: Voir ce(t/tte) group <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) group
+            delete: Supprimer définitivement ce(t/tte) group
         divisions:
           actions:
             create_new: Créer un(e) nouve(au/l/lle) Division
@@ -12,17 +28,25 @@ fr:
             reorder_done: Fin de réordonnancement des Divisions
           records:
             title: Divisions
-            sorry_no_results: "Désolé ! Aucun résultat."
-            no_items_yet: 'Il n''y a actuellement aucun(e) Division. Cliquer sur "Créer un(e) nouve(au/l/lle) Division" pour créer votre premi(er/ère) division.'
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Division. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Division" pour créer votre premi(er/ère) division.
           division:
             view_live_html: Voir ce(t/tte) division <br/><em>(Ouvre une nouvelle fenêtre)</em>
             edit: Modifier ce(t/tte) division
             delete: Supprimer définitivement ce(t/tte) division
+      groups:
+        show:
+          other: Autres Groups
       divisions:
         show:
           other: Autres Divisions
   activerecord:
     attributes:
-      'refinery/divisions/division':
+      refinery/divisions/group:
+        name: Name
+        photo: Photo
+        description: Description
+      refinery/divisions/division:
         name: Name
         description: Description
