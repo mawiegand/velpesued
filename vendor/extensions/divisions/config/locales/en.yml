@@ -45,6 +45,7 @@ en:
     attributes:
       refinery/divisions/group:
         name: Name
+        division: Division
         photo: Photo
         description: Description
       refinery/divisions/division:
