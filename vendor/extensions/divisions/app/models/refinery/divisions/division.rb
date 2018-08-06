@@ -6,7 +6,7 @@ module Refinery
 
       validates :name, :presence => true, :uniqueness => true
 
-      has_many :groups
+      has_many :groups, :dependent => :destroy
 
       # To enable admin searching, add acts_as_indexed on searchable fields, for example:
       acts_as_indexed :fields => [:name]
