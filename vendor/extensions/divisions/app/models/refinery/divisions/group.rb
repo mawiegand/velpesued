@@ -3,7 +3,7 @@ module Refinery
     class Group < Refinery::Core::BaseModel
 
 
-      validates :name, :presence => true, :uniqueness => true
+      validates :name, :presence => true
 
       belongs_to :photo, :class_name => '::Refinery::Image'
       belongs_to :division
