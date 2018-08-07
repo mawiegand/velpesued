@@ -1,33 +1,36 @@
-<% content_for :body_content_title do %>
-  <%= @division.name %>
-<% end %>
+<div class="container">
+  <% content_for :body_content_title do %>
+    <%= @division.name %>
+  <% end %>
 
-<% content_for :body do %>
-  <section>
-    <h1>Name</h1>
-    <p>
-      <%=raw @division.name %>
-    </p>
-  </section>
-  <section>
-    <h1>Description</h1>
-    <p>
-      <%=raw @division.description %>
-    </p>
-  </section>
-<% end %>
+  <% content_for :body do %>
+    <div class="row">
+      <div class="col-md-12">
+        <section>
+          <p>
+            <%=raw @division.description %>
+          </p>
+        </section>
+      </div>
+    </div>
 
-<% content_for :side_body do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <ul id="divisions">
-      <% @divisions.each do |division| %>
-        <li>
-          <%= link_to division.name, refinery.divisions_division_path(division) %>
-        </li>
+    <%# TODO: implement and use helper for cards %>
+    <section class="row groups">
+      <% @groups.each do |group| %>
+        <div class="col-md-4">
+          <a href="<%= refinery.divisions_group_path(group) %>">
+            <div class="card mb-4 box-shadow group">
+              <%# TODO: show default image if none photo present %>
+              <%= image_fu group.photo, '250x350', class: 'img-fluid card-img-top' %>
+              <div class="card-body">
+                <span><%= group.name %></span>
+              </div>
+            </div>
+          </a>
+        </div>
       <% end %>
-    </ul>
-  </aside>
-<% end %>
+    </section>
+  <% end %>
 
-<%= render '/refinery/content_page' %>
+  <%= render '/refinery/content_page' %>
+</div>
