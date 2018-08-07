@@ -5,12 +5,6 @@ module Refinery
       before_action :find_all_divisions
       before_action :find_page
 
-      def index
-        # you can use meta fields from your model instead (e.g. browser_title)
-        # by swapping @page for @division in the line below:
-        present(@page)
-      end
-
       def show
         @division = Division.find(params[:id])
         @groups = Group.where(division_id: @division.id).order('position ASC')
