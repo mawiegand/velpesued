@@ -5,12 +5,6 @@ module Refinery
       before_action :find_all_groups
       before_action :find_page
 
-      def index
-        # you can use meta fields from your model instead (e.g. browser_title)
-        # by swapping @page for @group in the line below:
-        present(@page)
-      end
-
       def show
         @group = Group.find(params[:id])
 

@@ -2,7 +2,7 @@ Refinery::Core::Engine.routes.draw do
 
   # Frontend routes
   namespace :divisions do
-    resources :groups, :only => [:index, :show]
+    resources :groups, :only => [:show]
     resources :divisions, :path => '', :only => [:index, :show]
   end
 
