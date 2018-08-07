@@ -2,7 +2,6 @@ module Refinery
   module Divisions
     class DivisionsController < ::ApplicationController
 
-      before_action :find_all_divisions
       before_action :find_page
 
       def show
@@ -15,10 +14,6 @@ module Refinery
       end
 
     protected
-
-      def find_all_divisions
-        @divisions = Division.order('position ASC')
-      end
 
       def find_page
         @page = ::Refinery::Page.where(:link_url => "/divisions").first

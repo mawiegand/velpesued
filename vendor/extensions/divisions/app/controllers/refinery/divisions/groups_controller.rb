@@ -2,7 +2,6 @@ module Refinery
   module Divisions
     class GroupsController < ::ApplicationController
 
-      before_action :find_all_groups
       before_action :find_page
 
       def show
@@ -14,10 +13,6 @@ module Refinery
       end
 
     protected
-
-      def find_all_groups
-        @groups = Group.order('position ASC')
-      end
 
       def find_page
         @page = ::Refinery::Page.where(:link_url => "/groups").first
