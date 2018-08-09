@@ -5,7 +5,7 @@ module Refinery
       before_action :find_page
 
       def show
-        @division = Division.find(params[:id])
+        @division = Division.friendly.find(params[:id])
         @groups = Group.where(division_id: @division.id).order('position ASC')
 
         # you can use meta fields from your model instead (e.g. browser_title)

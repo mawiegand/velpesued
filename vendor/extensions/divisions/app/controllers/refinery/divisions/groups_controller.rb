@@ -5,7 +5,7 @@ module Refinery
       before_action :find_page
 
       def show
-        @group = Group.where(division_id: params[:division_id]).find(params[:id])
+        @group = Division.friendly.find(params[:division_id]).groups.find(params[:id])
 
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @group in the line below:
