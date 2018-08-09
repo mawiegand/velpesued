@@ -6,7 +6,7 @@ module Refinery
 
       def show
         @division = Division.friendly.find(params[:id])
-        @groups = Group.where(division_id: @division.id).order('position ASC')
+        @groups = Group.where(division: @division).order('position ASC')
 
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @division in the line below:
