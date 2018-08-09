@@ -1,6 +1,6 @@
 # This migration comes from refinery_divisions (originally 4)
 class AddSlugToRefineryDivisions < ActiveRecord::Migration[5.1]
-  def change
+  def up
     # create slug column with index
     add_column :refinery_divisions, :slug, :string
     add_index :refinery_divisions, :slug, unique: true
@@ -10,5 +10,9 @@ class AddSlugToRefineryDivisions < ActiveRecord::Migration[5.1]
 
     # prevent null in slug column
     change_column :refinery_divisions, :slug, :string, null: false
+  end
+
+  def down
+    remove_column :refinery_divisions, :slug
   end
 end
