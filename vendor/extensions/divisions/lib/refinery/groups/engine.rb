@@ -8,15 +8,15 @@ module Refinery
 
       before_inclusion do
         Refinery::Plugin.register do |plugin|
-          plugin.name = "divisions"
-          plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.divisions_admin_divisions_path }
+          plugin.name = "groups"
+          plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.divisions_admin_groups_path }
           plugin.pathname = root
-          plugin.menu_match = %r{refinery/divisions(?!/groups)(/.*)?$}
+          plugin.menu_match = %r{refinery/divisions/groups(/.*)?$}
         end
       end
 
       config.after_initialize do
-        Refinery.register_extension(Refinery::Divisions)
+        Refinery.register_extension(Refinery::Groups)
       end
     end
   end

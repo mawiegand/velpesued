@@ -1,10 +1,27 @@
 nl:
   refinery:
     plugins:
+      groups:
+        title: Groups
       divisions:
         title: Divisions
     divisions:
       admin:
+        groups:
+          actions:
+            create_new: Nieuwe Group toevoegen
+            reorder: De volgorde van de Groups wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Group-volgorde
+          records:
+            title: Groups
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Groups. Druk op 'Nieuwe Group toevoegen'
+              om de eerste toe te voegen.
+          group:
+            view_live_html: Deze group op de website bekijken <br/><em>(opent in een
+              nieuw venster)</em>
+            edit: Bewerk deze group
+            delete: Deze group definitief verwijderen
         divisions:
           actions:
             create_new: Nieuwe Division toevoegen
@@ -13,16 +30,25 @@ nl:
           records:
             title: Divisions
             sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
-            no_items_yet: Er zijn nog geen Divisions. Druk op 'Nieuwe Division toevoegen' om de eerste toe te voegen.
+            no_items_yet: Er zijn nog geen Divisions. Druk op 'Nieuwe Division toevoegen'
+              om de eerste toe te voegen.
           division:
-            view_live_html: Deze division op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            view_live_html: Deze division op de website bekijken <br/><em>(opent in
+              een nieuw venster)</em>
             edit: Bewerk deze division
             delete: Deze division definitief verwijderen
+      groups:
+        show:
+          other: Andere Groups
       divisions:
         show:
           other: Andere Divisions
   activerecord:
     attributes:
-      'refinery/divisions/division':
+      refinery/divisions/group:
+        name: Name
+        photo: Photo
+        description: Description
+      refinery/divisions/division:
         name: Name
         description: Description

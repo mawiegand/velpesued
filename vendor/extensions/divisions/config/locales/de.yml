@@ -1,10 +1,26 @@
 de:
   refinery:
     plugins:
+      groups:
+        title: Gruppen
       divisions:
         title: Abteilungen
     divisions:
       admin:
+        groups:
+          actions:
+            create_new: Neue Gruppe anlegen
+            reorder: Gruppen umsortieren
+            reorder_done: Umsortieren erledigt
+          records:
+            title: Gruppen
+            sorry_no_results: Tut mir leid, Suche brachte keine Ergebnisse!
+            no_items_yet: Es sind noch keine Gruppen vorhanden. Klicken Sie auf "Neue Gruppe anlegen",
+              um Ihre erste Gruppe hinzuzufügen.
+          group:
+            view_live_html: Diese Gruppe live betrachten <br/><em>(öffnet sich in einem neuen Fenster)</em>
+            edit: Diese Gruppe bearbeiten
+            delete: Diese Gruppe dauerhaft entfernen
         divisions:
           actions:
             create_new: Neue Abteilung anlegen
@@ -13,16 +29,25 @@ de:
           records:
             title: Abteilungen
             sorry_no_results: Tut mir leid, Suche brachte keine Ergebnisse!
-            no_items_yet: Es sind noch keine Abteilungen vorhanden. Klicken Sie auf "Neue Abteilung anlegen", um Ihre erste Abteilung hinzuzufügen.
+            no_items_yet: Es sind noch keine Abteilungen vorhanden. Klicken Sie auf "Neue Abteilung anlegen",
+              um Ihre erste Abteilung hinzuzufügen.
           division:
             view_live_html: Diese Abteilung live betrachten <br/><em>(öffnet sich in einem neuen Fenster)</em>
             edit: Diese Abteilung bearbeiten
             delete: Diese Abteilung dauerhaft entfernen
+      groups:
+        show:
+          other: Andere Gruppen
       divisions:
         show:
           other: Andere Abteilungen
   activerecord:
     attributes:
-      'refinery/divisions/division':
+      refinery/divisions/group:
+        name: Name
+        division: Abteilung
+        photo: Foto
+        description: Beschreibung
+      refinery/divisions/division:
         name: Name
         description: Beschreibung

@@ -1,15 +1,13 @@
 module Refinery
   module Divisions
-    class Division < Refinery::Core::BaseModel
+    class Group < Refinery::Core::BaseModel
       extend FriendlyId
-      friendly_id :name, use: [:slugged, :finders], routes: :default
+      friendly_id :name, use: [:slugged, :finders, :scoped], scope: :division, routes: :default
 
-      self.table_name = 'refinery_divisions'
+      validates :name, :presence => true
 
-
-      validates :name, :presence => true, :uniqueness => true
-
-      has_many :groups, :dependent => :destroy
+      belongs_to :photo, :class_name => '::Refinery::Image', :optional => true
+      belongs_to :division
 
       # To enable admin searching, add acts_as_indexed on searchable fields, for example:
       acts_as_indexed :fields => [:name]
