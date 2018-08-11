@@ -1,0 +1,52 @@
+cs:
+  refinery:
+    plugins:
+      groups:
+        title: Groups
+      divisions:
+        title: Divisions
+    divisions:
+      admin:
+        groups:
+          actions:
+            create_new: Přidat Group
+            reorder: Řadit Groups
+            reorder_done: Konec řazení Groups
+          records:
+            title: Groups
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Groups. Zvolte "Přidat Group"
+              pro přidání prvního group.
+          group:
+            view_live_html: Zobrazit náhled group<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit group
+            delete: Smazat group
+        divisions:
+          actions:
+            create_new: Přidat Division
+            reorder: Řadit Divisions
+            reorder_done: Konec řazení Divisions
+          records:
+            title: Divisions
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Divisions. Zvolte "Přidat Division"
+              pro přidání prvního division.
+          division:
+            view_live_html: Zobrazit náhled division<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit division
+            delete: Smazat division
+      groups:
+        show:
+          other: Další Groups
+      divisions:
+        show:
+          other: Další Divisions
+  activerecord:
+    attributes:
+      refinery/divisions/group:
+        name: Name
+        photo: Photo
+        description: Description
+      refinery/divisions/division:
+        name: Name
+        description: Description

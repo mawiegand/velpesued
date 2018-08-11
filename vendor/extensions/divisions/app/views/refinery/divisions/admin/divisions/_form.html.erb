@@ -1,0 +1,31 @@
+<%= form_for [refinery, :divisions_admin, @division] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @division,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "divisions/division" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', f: f,
+             continue_editing: false,
+             delete_title: t('delete', scope: 'refinery.divisions.admin.divisions.division'),
+             delete_confirmation: t('message', scope: 'refinery.admin.delete', title: @division.name),
+             cancel_url: refinery.divisions_admin_divisions_path -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>
