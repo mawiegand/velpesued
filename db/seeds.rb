@@ -19,3 +19,6 @@ Refinery::Contacts::Engine.load_seed
 
 # Added by Refinery CMS Divisions extension
 Refinery::Divisions::Engine.load_seed
+
+# Added by Refinery CMS Facilities extension
+Refinery::Facilities::Engine.load_seed

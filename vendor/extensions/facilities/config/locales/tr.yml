@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      facilities:
+        title: Facilities
+    facilities:
+      admin:
+        facilities:
+          actions:
+            create_new: Yeni Ekle Facility
+            reorder: Tekrar sirala Facilities
+            reorder_done: Tekrar siralama tamamlandiFacilities
+          records:
+            title: Facilities
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Facilities yok henuz.  Tikla "Yeni Ekle Facility" eklemek senin ilk facility.
+          facility:
+            view_live_html: Bunu canlu facility goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle facility
+            delete: Bunu Sil facility sonsuza dek
+      facilities:
+        show:
+          other: Diger Facilities
+  activerecord:
+    attributes:
+      'refinery/facilities/facility':
+        name: Name
+        photo: Photo
+        address: Address
+        maps_link: Maps Link

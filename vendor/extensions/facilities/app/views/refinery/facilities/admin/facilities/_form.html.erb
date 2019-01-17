@@ -1,0 +1,35 @@
+<%= form_for [refinery, :facilities_admin, @facility] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @facility,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_id,
+               :image => @facility.photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :address -%>
+    <%= f.text_field :address -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :maps_link -%>
+    <%= f.text_field :maps_link -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', f: f,
+             continue_editing: false,
+             delete_title: t('delete', scope: 'refinery.facilities.admin.facilities.facility'),
+             delete_confirmation: t('message', scope: 'refinery.admin.delete', title: @facility.name),
+             cancel_url: refinery.facilities_admin_facilities_path -%>
+<% end -%>

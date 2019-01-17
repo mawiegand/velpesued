@@ -1,0 +1,30 @@
+en:
+  refinery:
+    plugins:
+      facilities:
+        title: Facilities
+    facilities:
+      admin:
+        facilities:
+          actions:
+            create_new: Add New Facility
+            reorder: Reorder Facilities
+            reorder_done: Done Reordering Facilities
+          records:
+            title: Facilities
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Facilities yet. Click "Add New Facility" to add your first facility.
+          facility:
+            view_live_html: View this facility live <br/><em>(opens in a new window)</em>
+            edit: Edit this facility
+            delete: Remove this facility forever
+      facilities:
+        show:
+          other: Other Facilities
+  activerecord:
+    attributes:
+      'refinery/facilities/facility':
+        name: Name
+        photo: Photo
+        address: Address
+        maps_link: Maps Link

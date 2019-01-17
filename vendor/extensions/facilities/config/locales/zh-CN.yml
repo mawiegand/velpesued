@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      facilities:
+        title: Facilities
+    facilities:
+      admin:
+        facilities:
+          actions:
+            create_new: 建立新的 Facility
+            reorder: 对 Facilities 重新排序
+            reorder_done: 对 Facilities 的重新排序结束
+          records:
+            title: Facilities
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Facilities yet. Click "Add New Facility" to add your first facility.
+            no_items_yet: 目前没有 Facilities . 点击 "Add New Facility" 创建一个facility.
+          facility:
+            view_live_html: 查看 facility 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 facility
+            delete: 永久删除 facility
+      facilities:
+        show:
+          other: 其他 Facilities
+  activerecord:
+    attributes:
+      'refinery/facilities/facility':
+        name: Name
+        photo: Photo
+        address: Address
+        maps_link: Maps Link

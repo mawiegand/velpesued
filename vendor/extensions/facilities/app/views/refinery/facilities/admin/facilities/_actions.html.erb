@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::Facilities::Admin::FacilitiesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.facilities_admin_facilities_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_facilities_admin_facility_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::Facilities::Admin::FacilitiesController.sortable? && ::Refinery::Facilities::Facility.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.facilities_admin_facilities_path,
+                     t('.reorder', what:  "Facilities"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.facilities_admin_facilities_path,
+                      t('.reorder_done', what: "Facilities"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

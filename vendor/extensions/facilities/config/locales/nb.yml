@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      facilities:
+        title: Facilities
+    facilities:
+      admin:
+        facilities:
+          actions:
+            create_new: Lag en ny Facility
+            reorder: Endre rekkefølgen på Facilities
+            reorder_done: Ferdig å endre rekkefølgen Facilities
+          records:
+            title: Facilities
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Facilities enda. Klikk på "Lag en ny Facility" for å legge til din første facility.
+          facility:
+            view_live_html: Vis hvordan denne facility ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne facility
+            delete: Fjern denne facility permanent
+      facilities:
+        show:
+          other: Andre Facilities
+  activerecord:
+    attributes:
+      'refinery/facilities/facility':
+        name: Name
+        photo: Photo
+        address: Address
+        maps_link: Maps Link
