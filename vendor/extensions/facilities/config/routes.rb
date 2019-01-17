@@ -2,7 +2,7 @@ Refinery::Core::Engine.routes.draw do
 
   # Frontend routes
   namespace :facilities do
-    resources :facilities, :path => '', :only => [:index, :show]
+    resources :facilities, :path => '', :only => [:index]
   end
 
   # Admin routes

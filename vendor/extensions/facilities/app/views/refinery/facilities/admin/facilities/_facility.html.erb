@@ -6,7 +6,7 @@
   <span class='preview'></span>
 
   <span class='actions'>
-    <%= action_icon(:preview, refinery.facilities_facility_path(facility), t('.view_live_html')) %>
+    <%= action_icon(:preview, refinery.facilities_facilities_path(), t('.view_live_html')) %>
     <%= action_icon(:edit,    refinery.edit_facilities_admin_facility_path(facility), t('.edit') ) %>
     <%= action_icon(:delete,  refinery.facilities_admin_facility_path(facility), t('.delete'),
       { class: "cancel confirm-delete",
