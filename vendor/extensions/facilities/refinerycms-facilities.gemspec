@@ -7,7 +7,8 @@ Gem::Specification.new do |s|
   s.description       = 'Ruby on Rails Facilities extension for Refinery CMS'
   s.date              = '2019-01-17'
   s.summary           = 'Facilities extension for Refinery CMS'
-  s.authors           = ["Marcel Wiegand"]
+  s.authors           = 'Marcel Wiegand'
+  s.email             = 'marcel@bluepanel.org'
   s.require_paths     = %w(lib)
   s.files             = Dir["{app,config,db,lib}/**/*"] + ["readme.md"]
 
