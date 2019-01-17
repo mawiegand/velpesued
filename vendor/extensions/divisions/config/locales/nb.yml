@@ -1,12 +1,29 @@
 nb:
   refinery:
     plugins:
+      positions:
+        title: Positions
       groups:
         title: Groups
       divisions:
         title: Divisions
     divisions:
       admin:
+        positions:
+          actions:
+            create_new: Lag en ny Position
+            reorder: Endre rekkefølgen på Positions
+            reorder_done: Ferdig å endre rekkefølgen Positions
+          records:
+            title: Positions
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Positions enda. Klikk på "Lag en ny Position"
+              for å legge til din første position.
+          position:
+            view_live_html: Vis hvordan denne position ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne position
+            delete: Fjern denne position permanent
         groups:
           actions:
             create_new: Lag en ny Group
@@ -37,6 +54,9 @@ nb:
               i et nytt vindu)</em>
             edit: Rediger denne division
             delete: Fjern denne division permanent
+      positions:
+        show:
+          other: Andre Positions
       groups:
         show:
           other: Andre Groups
@@ -45,6 +65,8 @@ nb:
           other: Andre Divisions
   activerecord:
     attributes:
+      refinery/divisions/position:
+        title: Title
       refinery/divisions/group:
         name: Name
         photo: Photo

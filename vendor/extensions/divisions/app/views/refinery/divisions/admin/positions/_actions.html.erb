@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::Divisions::Admin::PositionsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.divisions_admin_positions_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_divisions_admin_position_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::Divisions::Admin::PositionsController.sortable? && ::Refinery::Divisions::Position.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.divisions_admin_positions_path,
+                     t('.reorder', what:  "Positions"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.divisions_admin_positions_path,
+                      t('.reorder_done', what: "Positions"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

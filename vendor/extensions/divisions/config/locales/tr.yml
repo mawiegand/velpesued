@@ -1,12 +1,29 @@
 tr:
   refinery:
     plugins:
+      positions:
+        title: Positions
       groups:
         title: Groups
       divisions:
         title: Divisions
     divisions:
       admin:
+        positions:
+          actions:
+            create_new: Yeni Ekle Position
+            reorder: Tekrar sirala Positions
+            reorder_done: Tekrar siralama tamamlandiPositions
+          records:
+            title: Positions
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Positions yok henuz.  Tikla "Yeni Ekle Position"
+              eklemek senin ilk position.
+          position:
+            view_live_html: Bunu canlu position goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle position
+            delete: Bunu Sil position sonsuza dek
         groups:
           actions:
             create_new: Yeni Ekle Group
@@ -37,6 +54,9 @@ tr:
               acar)</em>
             edit: Bunu Duzenle division
             delete: Bunu Sil division sonsuza dek
+      positions:
+        show:
+          other: Diger Positions
       groups:
         show:
           other: Diger Groups
@@ -45,6 +65,8 @@ tr:
           other: Diger Divisions
   activerecord:
     attributes:
+      refinery/divisions/position:
+        title: Title
       refinery/divisions/group:
         name: Name
         photo: Photo

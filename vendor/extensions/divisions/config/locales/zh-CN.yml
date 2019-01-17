@@ -1,12 +1,27 @@
 zh-CN:
   refinery:
     plugins:
+      positions:
+        title: Positions
       groups:
         title: Groups
       divisions:
         title: Divisions
     divisions:
       admin:
+        positions:
+          actions:
+            create_new: 建立新的 Position
+            reorder: 对 Positions 重新排序
+            reorder_done: 对 Positions 的重新排序结束
+          records:
+            title: Positions
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Positions . 点击 "Add New Position" 创建一个position.
+          position:
+            view_live_html: 查看 position 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 position
+            delete: 永久删除 position
         groups:
           actions:
             create_new: 建立新的 Group
@@ -33,6 +48,9 @@ zh-CN:
             view_live_html: 查看 division 的最新内容.<br/><em>(新窗口中打开)</em>
             edit: 编辑 division
             delete: 永久删除 division
+      positions:
+        show:
+          other: 其他 Positions
       groups:
         show:
           other: 其他 Groups
@@ -41,6 +59,8 @@ zh-CN:
           other: 其他 Divisions
   activerecord:
     attributes:
+      refinery/divisions/position:
+        title: Title
       refinery/divisions/group:
         name: Name
         photo: Photo

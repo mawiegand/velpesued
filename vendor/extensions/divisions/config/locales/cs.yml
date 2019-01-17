@@ -1,12 +1,28 @@
 cs:
   refinery:
     plugins:
+      positions:
+        title: Positions
       groups:
         title: Groups
       divisions:
         title: Divisions
     divisions:
       admin:
+        positions:
+          actions:
+            create_new: Přidat Position
+            reorder: Řadit Positions
+            reorder_done: Konec řazení Positions
+          records:
+            title: Positions
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Positions. Zvolte "Přidat Position"
+              pro přidání prvního position.
+          position:
+            view_live_html: Zobrazit náhled position<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit position
+            delete: Smazat position
         groups:
           actions:
             create_new: Přidat Group
@@ -35,6 +51,9 @@ cs:
             view_live_html: Zobrazit náhled division<br/><em>(otevře se v novém okně)</em>
             edit: Upravit division
             delete: Smazat division
+      positions:
+        show:
+          other: Další Positions
       groups:
         show:
           other: Další Groups
@@ -43,6 +62,8 @@ cs:
           other: Další Divisions
   activerecord:
     attributes:
+      refinery/divisions/position:
+        title: Title
       refinery/divisions/group:
         name: Name
         photo: Photo

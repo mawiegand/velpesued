@@ -1,12 +1,29 @@
 es:
   refinery:
     plugins:
+      positions:
+        title: Positions
       groups:
         title: Groups
       divisions:
         title: Divisions
     divisions:
       admin:
+        positions:
+          actions:
+            create_new: Crear nuevo position
+            reorder: Reordenar positions
+            reorder_done: Reordenación de positions completada
+          records:
+            title: Positions
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay positions todavía. Pulsa en "Crear nuevo Position"
+              para crear tu primer position.
+          position:
+            view_live_html: Ver este position como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este position
+            delete: Borrar este position para siempre
         groups:
           actions:
             create_new: Crear nuevo group
@@ -37,6 +54,9 @@ es:
               en ventana nueva)</em>
             edit: Editar este division
             delete: Borrar este division para siempre
+      positions:
+        show:
+          other: Otros positions
       groups:
         show:
           other: Otros groups
@@ -45,6 +65,8 @@ es:
           other: Otros divisions
   activerecord:
     attributes:
+      refinery/divisions/position:
+        title: Title
       refinery/divisions/group:
         name: Name
         photo: Photo
