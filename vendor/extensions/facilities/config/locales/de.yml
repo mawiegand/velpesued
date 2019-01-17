@@ -1,0 +1,30 @@
+de:
+  refinery:
+    plugins:
+      facilities:
+        title: Sportstätten
+    facilities:
+      admin:
+        facilities:
+          actions:
+            create_new: Neue Sportstätte anlegen
+            reorder: Sportstätten umsortieren
+            reorder_done: Umsortieren erledigt
+          records:
+            title: Sportstätten
+            sorry_no_results: Tut mir leid, Suche brachte keine Ergebnisse!
+            no_items_yet: Es sind noch keine Sporstätten vorhanden. Klicken Sie auf "Neue Sportstätte anlegen", um Ihre erste Sportstätte hinzuzufügen.
+          facility:
+            view_live_html: Diese Sporstätte live betrachten <br/><em>(öffnet sich in einem neuen Fenster)</em>
+            edit: Diese Sportstätte bearbeiten
+            delete: Diese Sportstätte dauerhaft entfernen
+      facilities:
+        show:
+          other: Andere Kontakte
+  activerecord:
+    attributes:
+      'refinery/facilities/facility':
+        name: Name
+        photo: Foto
+        address: Adresse
+        maps_link: Maps Link
