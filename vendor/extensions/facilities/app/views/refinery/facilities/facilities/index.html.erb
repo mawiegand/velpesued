@@ -1,0 +1,16 @@
+<section class="container">
+  <% content_for :body do %>
+    <section id="facilities">
+      <% @facilities.each do |facility| %>
+        <article>
+          <%= image_fu facility.photo, nil, class: 'img-fluid' %>
+          <h3><%=raw facility.name %></h3>
+          <%=raw facility.address %><br>
+          <%= link_to 'Navigation Link', facility.maps_link %>
+        </article>
+      <% end %>
+    </section>
+  <% end %>
+
+  <%= render '/refinery/content_page' %>
+</section>

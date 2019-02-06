@@ -1,0 +1,30 @@
+cs:
+  refinery:
+    plugins:
+      facilities:
+        title: Facilities
+    facilities:
+      admin:
+        facilities:
+          actions:
+            create_new: Přidat Facility
+            reorder: Řadit Facilities
+            reorder_done: Konec řazení Facilities
+          records:
+            title: Facilities
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Facilities. Zvolte "Přidat Facility" pro přidání prvního facility.
+          facility:
+            view_live_html: Zobrazit náhled facility<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit facility
+            delete: Smazat facility
+      facilities:
+        show:
+          other: Další Facilities
+  activerecord:
+    attributes:
+      'refinery/facilities/facility':
+        name: Name
+        photo: Photo
+        address: Address
+        maps_link: Maps Link

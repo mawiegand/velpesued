@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      facilities:
+        title: Facilities
+#        article: masculino/femenino
+    facilities:
+      admin:
+        facilities:
+          actions:
+            create_new: Crear nuevo facility
+            reorder: Reordenar facilities
+            reorder_done: Reordenación de facilities completada
+          records:
+            title: Facilities
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay facilities todavía. Pulsa en "Crear nuevo Facility" para crear tu primer facility.
+          facility:
+            view_live_html: Ver este facility como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este facility
+            delete: Borrar este facility para siempre
+      facilities:
+        show:
+          other: Otros facilities
+  activerecord:
+    attributes:
+      'refinery/facilities/facility':
+        name: Name
+        photo: Photo
+        address: Address
+        maps_link: Maps Link

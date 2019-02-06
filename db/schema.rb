@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180809103011) do
+ActiveRecord::Schema.define(version: 20190117162709) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -85,6 +85,23 @@ ActiveRecord::Schema.define(version: 20180809103011) do
     t.integer "division_id"
     t.string "slug", null: false
     t.index ["slug"], name: "index_refinery_divisions_groups_on_slug"
+  end
+
+  create_table "refinery_divisions_positions", force: :cascade do |t|
+    t.string "title"
+    t.integer "position"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "refinery_facilities", force: :cascade do |t|
+    t.string "name"
+    t.integer "photo_id"
+    t.string "address"
+    t.string "maps_link"
+    t.integer "position"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "refinery_image_translations", force: :cascade do |t|

@@ -7,6 +7,9 @@ PATH
     refinerycms-divisions (1.0)
       acts_as_indexed (~> 0.8.0)
       refinerycms-core (~> 4.0.2)
+    refinerycms-facilities (1.0)
+      acts_as_indexed (~> 0.8.0)
+      refinerycms-core (~> 4.0.2)
     refinerycms-sponsors (1.0)
       acts_as_indexed (~> 0.8.0)
       refinerycms-core (~> 4.0.1)
@@ -362,6 +365,7 @@ DEPENDENCIES
   refinerycms-authentication-devise (~> 2.0)
   refinerycms-contacts!
   refinerycms-divisions!
+  refinerycms-facilities!
   refinerycms-sponsors!
   refinerycms-wymeditor (~> 2.0, >= 2.0.0)
   sassc-rails
