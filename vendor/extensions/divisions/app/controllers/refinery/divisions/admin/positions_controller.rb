@@ -3,8 +3,7 @@ module Refinery
     module Admin
       class PositionsController < ::Refinery::AdminController
 
-        before_action :find_all_contacts, except: [:show, :destroy]
-        before_action :find_all_manageables, except: [:show, :destroy]
+        before_action :find_all_contacts, :find_all_manageables, except: [:show, :destroy]
 
         crudify :'refinery/divisions/position'
 
