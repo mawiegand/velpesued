@@ -8,6 +8,11 @@
       <div class="col-md-12">
         <section>
           <%= image_fu @group.photo, nil, class: 'img-fluid' %>
+          <section class="positions">
+            <% @group.positions.each do |position| %>
+              <%= render position %>
+            <% end %>
+          </section>
           <p>
             <%=raw @group.description %>
           </p>
