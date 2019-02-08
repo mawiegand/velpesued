@@ -20,6 +20,14 @@ module Refinery
         self.manageable = GlobalID::Locator.locate global_id
       end
 
+      def manageable_title
+        [title, manageable.name].join(' ')
+      end
+
+      def full_title
+         [manageable_title, manageable&.try(:division)&.name].join(' ')
+      end
+
     end
   end
 end
