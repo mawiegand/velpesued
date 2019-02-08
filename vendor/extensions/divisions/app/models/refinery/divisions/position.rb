@@ -9,8 +9,7 @@ module Refinery
       belongs_to :manageable, :polymorphic => true
 
       # To enable admin searching, add acts_as_indexed on searchable fields, for example:
-      #
-      #   acts_as_indexed :fields => [:title]
+      acts_as_indexed :fields => [:title]
 
       def manageable_global_id
         manageable&.to_global_id
