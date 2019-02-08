@@ -11,7 +11,7 @@ module Refinery
           plugin.name = "divisions"
           plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.divisions_admin_divisions_path }
           plugin.pathname = root
-          plugin.menu_match = %r{refinery/divisions(?!/groups)(/.*)?$}
+          plugin.menu_match = %r{refinery/divisions(?!/(groups|positions))(/.*)?$}
         end
       end
 
