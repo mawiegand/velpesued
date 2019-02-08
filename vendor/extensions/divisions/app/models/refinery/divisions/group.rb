@@ -8,6 +8,7 @@ module Refinery
 
       belongs_to :photo, :class_name => '::Refinery::Image', :optional => true
       belongs_to :division
+      has_many :positions, :as => :manageable, :dependent => :destroy
 
       # To enable admin searching, add acts_as_indexed on searchable fields, for example:
       acts_as_indexed :fields => [:name]
