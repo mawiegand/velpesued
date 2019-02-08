@@ -3,7 +3,7 @@ module Refinery
     class Position < Refinery::Core::BaseModel
 
 
-      validates :title, :presence => true, :uniqueness => true
+      validates :title, :presence => true, :uniqueness => {:scope => [:manageable_type, :manageable_id]}
 
       belongs_to :contact, :class_name => '::Refinery::Contacts::Contact'
       belongs_to :manageable, :polymorphic => true
