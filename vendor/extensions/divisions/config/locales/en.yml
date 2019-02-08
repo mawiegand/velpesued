@@ -64,6 +64,8 @@ en:
     attributes:
       refinery/divisions/position:
         title: Title
+        contact: Contact
+        manageable: Domain
       refinery/divisions/group:
         name: Name
         division: Division
