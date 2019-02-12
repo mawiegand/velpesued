@@ -15,7 +15,7 @@
 
   <div class="field">
     <%= f.label :manageable -%>
-    <%= f.collection_select(:manageable_global_id, @manageables, :to_global_id, :name) %>
+    <%= f.select(:manageable_global_id, @manageables.collect { |d| [d.try(:full_name) || d.name, d.to_global_id] })%>
   </div>
 
   <%= render '/refinery/admin/form_actions', f: f,
