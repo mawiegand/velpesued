@@ -1,16 +1,22 @@
 <section class="container">
   <% content_for :body do %>
     <section id="contacts">
-      <% @contacts.each do |contact| %>
-        <article>
-          <%= image_fu contact.photo, '150x150', class: 'float-left' %>
-          <div class="clearfix">
-            <h3><%=raw contact.name %></h3>
-            <%=raw contact.mail %><br>
-            <%=raw contact.phone %><br>
-            <%=raw contact.mobile %><br>
-          </div>
-        </article>
+      <% @divisions.each do |division| %>
+        <section class="division">
+          <h2><%= division.name %></h2>
+          <% division.positions.each do |position| %>
+            <%= render position %>
+          <% end %>
+
+          <% division.groups.each do |group| %>
+            <section class="group">
+              <h3><%= group.name %></h3>
+              <% group.positions.each do |position| %>
+                <%= render position %>
+              <% end %>
+            </section>
+          <% end %>
+        </section>
       <% end %>
     </section>
   <% end %>

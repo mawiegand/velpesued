@@ -2,7 +2,7 @@ module Refinery
   module Contacts
     class ContactsController < ::ApplicationController
 
-      before_action :find_all_contacts
+      before_action :find_all_divisions
       before_action :find_page
 
       def index
@@ -13,8 +13,8 @@ module Refinery
 
     protected
 
-      def find_all_contacts
-        @contacts = Contact.order('position ASC')
+      def find_all_divisions
+        @divisions = ::Refinery::Divisions::Division.order('position ASC')
       end
 
       def find_page

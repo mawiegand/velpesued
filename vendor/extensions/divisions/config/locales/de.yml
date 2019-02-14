@@ -1,12 +1,28 @@
 de:
   refinery:
     plugins:
+      positions:
+        title: Posten
       groups:
         title: Gruppen
       divisions:
         title: Abteilungen
     divisions:
       admin:
+        positions:
+          actions:
+            create_new: Neuen Posten anlegen
+            reorder: Posten umsortieren
+            reorder_done: Umsortieren erledigt
+          records:
+            title: Posten
+            sorry_no_results: Tut mir leid, Suche brachte keine Ergebnisse!
+            no_items_yet: Es sind noch keine Posten vorhanden. Klicken Sie auf "Neuen Posten anlegen",
+              um Ihre ersten Posten hinzuzufügen.
+          position:
+            view_live_html: Diesen Posten live betrachten <br/><em>(öffnet sich in einem neuen Fenster)</em>
+            edit: Diesen Posten bearbeiten
+            delete: Diesen Posten dauerhaft entfernen
         groups:
           actions:
             create_new: Neue Gruppe anlegen
@@ -35,6 +51,9 @@ de:
             view_live_html: Diese Abteilung live betrachten <br/><em>(öffnet sich in einem neuen Fenster)</em>
             edit: Diese Abteilung bearbeiten
             delete: Diese Abteilung dauerhaft entfernen
+      positions:
+        show:
+          other: Andere Posten
       groups:
         show:
           other: Andere Gruppen
@@ -43,6 +62,10 @@ de:
           other: Andere Abteilungen
   activerecord:
     attributes:
+      refinery/divisions/position:
+        title: Bezeichnung
+        contact: Kontakt
+        manageable: Zuständigkeitsbereich
       refinery/divisions/group:
         name: Name
         division: Abteilung

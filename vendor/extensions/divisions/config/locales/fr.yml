@@ -1,12 +1,28 @@
 fr:
   refinery:
     plugins:
+      positions:
+        title: Positions
       groups:
         title: Groups
       divisions:
         title: Divisions
     divisions:
       admin:
+        positions:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Position
+            reorder: Réordonner les Positions
+            reorder_done: Fin de réordonnancement des Positions
+          records:
+            title: Positions
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Position. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Position" pour créer votre premi(er/ère) position.
+          position:
+            view_live_html: Voir ce(t/tte) position <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) position
+            delete: Supprimer définitivement ce(t/tte) position
         groups:
           actions:
             create_new: Créer un(e) nouve(au/l/lle) Group
@@ -35,6 +51,9 @@ fr:
             view_live_html: Voir ce(t/tte) division <br/><em>(Ouvre une nouvelle fenêtre)</em>
             edit: Modifier ce(t/tte) division
             delete: Supprimer définitivement ce(t/tte) division
+      positions:
+        show:
+          other: Autres Positions
       groups:
         show:
           other: Autres Groups
@@ -43,6 +62,8 @@ fr:
           other: Autres Divisions
   activerecord:
     attributes:
+      refinery/divisions/position:
+        title: Title
       refinery/divisions/group:
         name: Name
         photo: Photo

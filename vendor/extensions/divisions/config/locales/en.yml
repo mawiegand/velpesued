@@ -1,12 +1,28 @@
 en:
   refinery:
     plugins:
+      positions:
+        title: Positions
       groups:
         title: Groups
       divisions:
         title: Divisions
     divisions:
       admin:
+        positions:
+          actions:
+            create_new: Add New Position
+            reorder: Reorder Positions
+            reorder_done: Done Reordering Positions
+          records:
+            title: Positions
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Positions yet. Click "Add New Position" to
+              add your first position.
+          position:
+            view_live_html: View this position live <br/><em>(opens in a new window)</em>
+            edit: Edit this position
+            delete: Remove this position forever
         groups:
           actions:
             create_new: Add New Group
@@ -35,6 +51,9 @@ en:
             view_live_html: View this division live <br/><em>(opens in a new window)</em>
             edit: Edit this division
             delete: Remove this division forever
+      positions:
+        show:
+          other: Other Positions
       groups:
         show:
           other: Other Groups
@@ -43,6 +62,10 @@ en:
           other: Other Divisions
   activerecord:
     attributes:
+      refinery/divisions/position:
+        title: Title
+        contact: Contact
+        manageable: Domain
       refinery/divisions/group:
         name: Name
         division: Division

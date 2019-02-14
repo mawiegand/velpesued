@@ -10,6 +10,11 @@
           <p>
             <%=raw @division.description %>
           </p>
+          <section class="positions">
+            <% @division.positions.each do |position| %>
+              <%= render position %>
+            <% end %>
+          </section>
         </section>
       </div>
     </div>

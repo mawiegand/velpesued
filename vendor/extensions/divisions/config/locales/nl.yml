@@ -1,12 +1,29 @@
 nl:
   refinery:
     plugins:
+      positions:
+        title: Positions
       groups:
         title: Groups
       divisions:
         title: Divisions
     divisions:
       admin:
+        positions:
+          actions:
+            create_new: Nieuwe Position toevoegen
+            reorder: De volgorde van de Positions wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Position-volgorde
+          records:
+            title: Positions
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Positions. Druk op 'Nieuwe Position toevoegen'
+              om de eerste toe te voegen.
+          position:
+            view_live_html: Deze position op de website bekijken <br/><em>(opent in
+              een nieuw venster)</em>
+            edit: Bewerk deze position
+            delete: Deze position definitief verwijderen
         groups:
           actions:
             create_new: Nieuwe Group toevoegen
@@ -37,6 +54,9 @@ nl:
               een nieuw venster)</em>
             edit: Bewerk deze division
             delete: Deze division definitief verwijderen
+      positions:
+        show:
+          other: Andere Positions
       groups:
         show:
           other: Andere Groups
@@ -45,6 +65,8 @@ nl:
           other: Andere Divisions
   activerecord:
     attributes:
+      refinery/divisions/position:
+        title: Title
       refinery/divisions/group:
         name: Name
         photo: Photo

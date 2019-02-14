@@ -1,0 +1,26 @@
+<%= form_for [refinery, :divisions_admin, @position] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @position,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+  <div class="field">
+    <%= f.label :contact -%>
+    <%= f.select(:contact_id, @contacts.collect { |d| [d.name, d.id] })%>
+  </div>
+
+  <div class="field">
+    <%= f.label :manageable -%>
+    <%= f.select(:manageable_global_id, @manageables.collect { |d| [d.try(:full_name) || d.name, d.to_global_id] })%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', f: f,
+             continue_editing: false,
+             delete_title: t('delete', scope: 'refinery.positions.admin.positions.position'),
+             delete_confirmation: t('message', scope: 'refinery.admin.delete', title: @position.title),
+             cancel_url: refinery.divisions_admin_positions_path -%>
+<% end -%>
