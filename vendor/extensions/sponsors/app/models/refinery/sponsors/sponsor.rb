@@ -11,6 +11,8 @@ module Refinery
       # To enable admin searching, add acts_as_indexed on searchable fields, for example:
       acts_as_indexed :fields => [:name]
 
+      scope :published, -> { where(published: true) }
+
     end
   end
 end
