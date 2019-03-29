@@ -13,7 +13,9 @@
 
 @import "refinery/formatting";
 @import "refinery/theme";
-@import "bootstrap";
+
+/* Import custom bootstrap settings */
+@import "_bootstrap-custom";
 
 html {
   position: relative;
