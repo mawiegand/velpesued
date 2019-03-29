@@ -27,6 +27,24 @@ body {
   margin-bottom: 60px;
 }
 
+.card-navigation .card {
+  @extend .bg-primary;
+  @extend .text-light;
+  @extend .text-center;
+  @extend .font-weight-bold;
+  @extend .font-size-large;
+  border-color: #000000;
+
+  img {
+    @extend .card-img-top;
+    height: 240px;
+  }
+
+  .card-body a {
+    @extend .stretched-link;
+  }
+}
+
 #page_container > footer {
   position: absolute;
   bottom: 0;
