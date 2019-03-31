@@ -23,15 +23,15 @@
     <section class="row groups">
       <% @groups.each do |group| %>
         <div class="col-md-4">
-          <a href="<%= refinery.divisions_division_group_path(group.division, group.friendly_id) %>">
-            <div class="card mb-4 box-shadow group">
-              <%# TODO: show default image if none photo present %>
-              <%= image_fu group.photo, '250x350', class: 'img-fluid card-img-top' %>
-              <div class="card-body">
-                <span><%= group.name %></span>
-              </div>
+          <div class="card mb-4 group">
+            <%# TODO: show default image if none photo present %>
+            <%= image_fu group.photo, '250x350', class: 'img-fluid card-img-top' %>
+            <div class="card-body">
+              <a href="<%= refinery.divisions_division_group_path(group.division, group.friendly_id) %>">
+                <span class="card-title"><%= group.name %></span>
+              </a>
             </div>
-          </a>
+          </div>
         </div>
       <% end %>
     </section>
