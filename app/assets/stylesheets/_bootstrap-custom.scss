@@ -1,9 +1,7 @@
 $scvs-primary: #8f2271;
-$scvs-secondary: #ffffff;
 
 $theme-colors: (
-        "primary": $scvs-primary,
-        "secondary": $scvs-secondary
+        "primary": $scvs-primary
 );
 
 @import "bootstrap";
