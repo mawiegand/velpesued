@@ -37,9 +37,14 @@ body {
   @extend .font-size-large;
   border-color: #000000;
 
-  img {
+  img, .nav-img {
     @extend .card-img-top;
-    height: 240px;
+    @extend .bg-dark;
+  }
+
+  span.nav-img {
+    font-size: 10rem;
+    padding: 3rem 0;
   }
 
   .card-body a {
