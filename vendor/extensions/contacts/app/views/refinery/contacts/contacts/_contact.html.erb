@@ -1,7 +1,25 @@
-<%= image_fu contact.photo, '150x150', class: 'float-left' %>
-<div class="clearfix">
-  <%=raw contact.name %><br>
-  <%=raw contact.mail %><br>
-  <%=raw contact.phone %><br>
-  <%=raw contact.mobile %><br>
+<div class="contact">
+  <div class="row no-gutters align-items-center">
+    <div class="col-md-5">
+      <div class="contact-photo">
+        <% if contact.photo %>
+          <%= image_fu contact.photo, '150x150' %>
+        <% else %>
+          <%= fa_icon 'portrait' %>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="contact-body">
+        <% if local_assigns[:position] %>
+          <span class="contact-title"><%= position.manageable_title %></span>
+        <% end %>
+        <span class="contact-name"><%= contact.name %></span><br>
+        <%= fa_icon 'users', text: position.division_name %><br>
+        <%= fa_icon 'envelope', text: contact.mail %><br>
+        <%= fa_icon 'phone', text: contact.phone %><br>
+        <%= fa_icon 'mobile-alt', text: contact.mobile %>
+      </div>
+    </div>
+  </div>
 </div>

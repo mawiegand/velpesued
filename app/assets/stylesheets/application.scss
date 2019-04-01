@@ -49,11 +49,50 @@ body {
 
   .card-body a {
     @extend .stretched-link;
+    @extend .text-light;
+    @extend .text-decoration-none;
   }
 }
 
 .groups {
   @extend .card-navigation;
+}
+
+.contact {
+  .contact-photo {
+    @extend .text-center;
+    @extend .bg-primary;
+    @extend .text-light;
+
+    img {
+      @extend .card-img;
+      @extend .img-fluid;
+    }
+
+    i {
+      font-size: 8rem;
+      padding: 3rem;
+    }
+  }
+
+  .contact-body {
+    @extend .card-body;
+
+    i {
+      @extend .fa-fw;
+    }
+
+    .contact-title {
+      @extend .card-title;
+      @extend .h5;
+      @extend .d-block;
+    }
+
+    .contact-name {
+      @extend .h6;
+      @extend .d-block;
+    }
+  }
 }
 
 #page_container > footer {

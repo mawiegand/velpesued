@@ -27,6 +27,10 @@ module Refinery
          [manageable_title, manageable&.try(:division)&.name].join(' ')
       end
 
+      def division_name
+        manageable&.try(:division)&.name || manageable.name
+      end
+
     end
   end
 end
