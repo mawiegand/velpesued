@@ -61,8 +61,9 @@ body {
 .contact {
   .contact-photo {
     @extend .text-center;
-    @extend .bg-primary;
+    @extend .bg-dark;
     @extend .text-light;
+    @extend .rounded;
 
     img {
       @extend .card-img;
@@ -71,7 +72,7 @@ body {
 
     i {
       font-size: 8rem;
-      padding: 3rem;
+      padding: 3rem 0;
     }
   }
 
@@ -80,12 +81,15 @@ body {
 
     i {
       @extend .fa-fw;
+      @extend .text-primary;
     }
 
     .contact-title {
       @extend .card-title;
       @extend .h5;
       @extend .d-block;
+      @extend .text-primary;
+      @extend .font-weight-bold;
     }
 
     .contact-name {

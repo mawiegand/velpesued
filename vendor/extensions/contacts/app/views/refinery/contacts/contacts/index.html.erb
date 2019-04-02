@@ -3,11 +3,11 @@
     <section id="contacts">
       <% @divisions.each do |division| %>
         <section class="row division">
-          <div class="col">
+          <div class="col-12">
             <h2><%= division.name %></h2>
             <div class="row positions">
               <% division.positions.each do |position| %>
-                <div class="col-lg-6">
+                <div class="col-12 col-lg-6">
                   <%= render position %>
                 </div>
               <% end %>
@@ -15,11 +15,11 @@
 
             <% division.groups.each do |group| %>
               <section class="row group">
-                <div class="col">
+                <div class="col-12">
                   <h3><%= group.name %></h3>
                   <div class="row positions">
                     <% group.positions.each do |position| %>
-                      <div class="col-lg-6">
+                      <div class="col-12 col-lg-6">
                         <%= render position %>
                       </div>
                     <% end %>
