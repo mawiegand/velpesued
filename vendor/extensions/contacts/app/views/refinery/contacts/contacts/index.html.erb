@@ -2,20 +2,32 @@
   <% content_for :body do %>
     <section id="contacts">
       <% @divisions.each do |division| %>
-        <section class="division">
-          <h2><%= division.name %></h2>
-          <% division.positions.each do |position| %>
-            <%= render position %>
-          <% end %>
-
-          <% division.groups.each do |group| %>
-            <section class="group">
-              <h3><%= group.name %></h3>
-              <% group.positions.each do |position| %>
-                <%= render position %>
+        <section class="row division">
+          <div class="col">
+            <h2><%= division.name %></h2>
+            <div class="row positions">
+              <% division.positions.each do |position| %>
+                <div class="col-lg-6">
+                  <%= render position %>
+                </div>
               <% end %>
-            </section>
-          <% end %>
+            </div>
+
+            <% division.groups.each do |group| %>
+              <section class="row group">
+                <div class="col">
+                  <h3><%= group.name %></h3>
+                  <div class="row positions">
+                    <% group.positions.each do |position| %>
+                      <div class="col-lg-6">
+                        <%= render position %>
+                      </div>
+                    <% end %>
+                  </div>
+                </div>
+              </section>
+            <% end %>
+          </div>
         </section>
       <% end %>
     </section>
