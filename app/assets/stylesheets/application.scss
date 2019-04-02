@@ -99,6 +99,31 @@ body {
   }
 }
 
+.group {
+  @extend .w-100;
+
+  .group-photo {
+    @extend .text-center;
+    @extend .bg-dark;
+    @extend .text-light;
+    @extend .rounded;
+    @extend .d-flex;
+    @extend .h-100;
+
+    img {
+      @extend .card-img;
+      @extend .img-fluid;
+    }
+
+    i {
+      @extend .mx-auto;
+      @extend .my-auto;
+      @extend .py-4;
+      font-size: 8rem;
+    }
+  }
+}
+
 #contacts {
   .division {
     margin-bottom: 2rem;

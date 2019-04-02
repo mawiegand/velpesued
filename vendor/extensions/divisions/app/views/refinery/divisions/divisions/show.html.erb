@@ -5,27 +5,31 @@
 
   <% content_for :body do %>
     <div class="row">
-      <div class="col-md-12">
-        <section>
-          <p>
-            <%=raw @division.description %>
-          </p>
-          <section class="positions">
-            <% @division.positions.each do |position| %>
-              <%= render position %>
-            <% end %>
-          </section>
-        </section>
+      <div class="col-12">
+        <p>
+          <%=raw @division.description %>
+        </p>
       </div>
     </div>
+    <section class="row positions">
+      <% @division.positions.each do |position| %>
+        <div class="col-12 col-lg-6">
+          <%= render position %>
+        </div>
+      <% end %>
+    </section>
 
-    <%# TODO: implement and use helper for cards %>
     <section class="row groups">
       <% @groups.each do |group| %>
-        <div class="col-md-4">
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
           <div class="card mb-4 group">
-            <%# TODO: show default image if none photo present %>
-            <%= image_fu group.photo, '250x350', class: 'img-fluid card-img-top' %>
+            <div class="group-photo">
+              <% if group.photo %>
+                <%= image_fu group.photo, '348x232' %>
+              <% else %>
+                <%= fa_icon 'users' %>
+              <% end %>
+            </div>
             <div class="card-body">
               <a href="<%= refinery.divisions_division_group_path(group.division, group.friendly_id) %>">
                 <span class="card-title"><%= group.name %></span>
