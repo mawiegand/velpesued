@@ -176,7 +176,8 @@ GEM
     pg (1.1.4)
     popper_js (1.14.5)
     public_suffix (3.0.3)
-    puma (3.12.1)
+    puma (4.3.12)
+      nio4r (~> 2.0)
     rack (2.0.6)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -358,7 +359,7 @@ DEPENDENCIES
   jquery-rails
   listen (>= 3.0.5, < 3.2)
   pg
-  puma (~> 3.7)
+  puma (~> 4.3)
   rails (~> 5.1.5)
   refinerycms (~> 4.0)
   refinerycms-acts-as-indexed (~> 3.0, >= 3.0.0)
